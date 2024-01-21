@@ -1,15 +1,77 @@
 import React from 'react'
-import {Card, Button} from 'react-bootstrap';
+import {Card, Form, Row, Col} from 'react-bootstrap';
  function Order() {
   return <React.Fragment>
     <Card>
     <Card.Body>
         <Card.Title>Size & Crust</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Form.Group className="py-3"> {/*Size */}
+            <Row>
+            <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                         <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                         </Col>
+                </div>
+            </Col>
+            <Col md={6}>
+                <div className="mb-3">
+                         <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                         </Col>
+                </div>
+                </Col>
+                <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                        </Col>
+                </div>
+                </Col>
+                <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                        </Col>
+                </div>
+                </Col>
+                <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                        </Col>
+                </div>
+                </Col>
+                <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Small`}/>
+                        </Col>
+                </div>
+                </Col>
+                
+                
+            </Row>
+        </Form.Group>
+        <hr></hr>
+        <Form.Group className="py-3"> {/*Crust*/}
+            <Row>
+            <Col md={6}>
+                <div className="mb-3">
+                        <Col md={6}>
+                         <Form.Check type="radio" id={`default-`} label={`Thin`}/>
+                         </Col>
+                </div>
+            </Col>
+            <Col md={6}>
+                <div className="mb-3">
+                         <Col md={6}>
+                        <Form.Check type="radio" id={`default-`} label={`Thick`}/>
+                         </Col>
+                </div>
+                </Col>
+            </Row>
+        </Form.Group>
       </Card.Body>
     </Card>
     </React.Fragment>
