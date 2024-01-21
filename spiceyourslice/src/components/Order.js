@@ -2,7 +2,7 @@ import React from 'react'
 import {Card, Form, Row, Col} from 'react-bootstrap';
  function Order() {
   return <React.Fragment>
-    <Card>
+    <Card>{/* Pizza Sizing */}
     <Card.Body>
         <Card.Title>Size & Crust</Card.Title>
         <Form.Group className="py-3"> {/*Size */}
@@ -73,6 +73,16 @@ import {Card, Form, Row, Col} from 'react-bootstrap';
             </Row>
         </Form.Group>
       </Card.Body>
+    </Card>
+
+    <Card className="my-2">
+      <Card.Body>
+        <Card.Title style={{display: "flex"}}>
+        Cheese
+        <Form.Check type="checkbox" className=""id={`default`} />
+        </Card.Title>
+        
+        </Card.Body>
     </Card>
     </React.Fragment>
 }
