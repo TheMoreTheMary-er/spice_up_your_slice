@@ -22,11 +22,11 @@ function App() {
       crust: "",
       cheese: {
         includes: false,
-        value: "normal",
+        value: "",
       },
       sauce: {
         includes: false,
-        value: "robustInspiredTomatoSauce",
+        value: "",
       },
       toppingMeat: [],
       toppingNonMeat: [],
@@ -34,6 +34,7 @@ function App() {
     },
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+      
     },
     validate,
   });
@@ -42,9 +43,11 @@ function App() {
     <div>
       <Nav activeKey="/home" style={{ background: "#0d6efd" }}>
         <Nav.Item>
+         
           <Nav.Link href="/home" style={{ color: "#ffff" }}>
-            <h4>PIZZA BUILDER FORM</h4>
+            <h4>SPICE UP YOUR SLICE!</h4>
           </Nav.Link>
+    
         </Nav.Item>
       </Nav>
       <Container className="my-4">
