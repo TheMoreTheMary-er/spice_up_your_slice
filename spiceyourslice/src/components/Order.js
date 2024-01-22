@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Form, Row, Col, Alert} from 'react-bootstrap';
+import {Card, Form, Row, Col, Alert, FormFloating} from 'react-bootstrap';
 
 const size = [
   {
@@ -124,11 +124,15 @@ const nonmeat = [
                         value={d.value} 
                         name="crust"
                         onChange={formik.handleChange}
+                        isInvalid={formik.errors.crust && formik.touched.crust}
                         />
                 <small className="mx-4">{d.description}</small>  
                 </div>
             </Col>
             ))}
+            {formik.errors.crust && formik.touched.crust? 
+            <Alert variant="danger">{formik.errors.crust}</Alert>
+          : null}
             </Row>
         </Form.Group>
       </Card.Body>
