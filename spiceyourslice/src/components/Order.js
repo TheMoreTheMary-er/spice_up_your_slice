@@ -242,6 +242,25 @@ const nonmeat = [
             
     </Card.Body>
     </Card>
+    <Card>{/* Pizza Sizing */}
+    <Card.Body>
+        <Card.Title>Sample Pizza Combinations!</Card.Title>
+        <Form.Group className="py-3"> {/*Size */}
+            <Row>
+            <Card.Img  src="https://www.foodandwine.com/thmb/CGXpgjWOgHWv9TsqyMoLyl5cYrs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/soppressata-pizza-with-calabrian-chile-hot-honey-FT-RECIPE0422-827abb3537834dbcb6ab0bbd6efece39.jpg"></Card.Img>
+            <div>Size: Small &nbsp; Crust: Brookly Style &nbsp; Cheese: Regular</div>
+            <div>Sauce: Tomato Sauce &nbsp; Non-Meat: Onions & Jalapeno Peppers &nbsp; Meat: Pepperoni</div>
+            </Row>
+            <hr></hr>
+            <Row>
+            <Card.Img  src="https://www.northmart.ca/uploads/news/pizza_day.t1598988439.jpg"></Card.Img>
+            <div>Size: Small &nbsp; Crust: Thin Crust &nbsp; Cheese: Regular</div>
+            <div>Sauce: Tomato Sauce &nbsp; Non-Meat: None &nbsp; Meat: None</div>
+            </Row>
+            <hr></hr>
+        </Form.Group>
+        </Card.Body>
+        </Card>
     </React.Fragment>
 }
 
